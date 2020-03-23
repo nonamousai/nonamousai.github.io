@@ -19,7 +19,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -3256,6 +3256,7 @@ input, select, textarea {
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
+		height: 100%;
 	}
 
 		#wrapper > .bg {
@@ -3272,6 +3273,10 @@ input, select, textarea {
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+
+#home > .bg {
+	background-image: ;
+}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3317,9 +3322,9 @@ input, select, textarea {
 	#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 0rem 4rem ; /* changed padding to make text more towards the bottom */
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
+		-moz-align-items: flex-end;
+		-webkit-align-items: flex-end;
+		-ms-align-items: flex-end;
 		align-items: flex-end; /* this makes text go to the right */
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3339,9 +3344,8 @@ input, select, textarea {
 		transition: opacity 1s ease, transform 1s ease;
 		position: relative;
 		cursor: default;
-		text-align: center;
 		z-index: 1;
-		min-height: 80vh;
+		min-height: 75vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -4417,10 +4421,12 @@ input, select, textarea {
 
 		}
 
+
+
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		bottom: -25px;
+		text-align: center;
 		align-self: flex-end;
 		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
@@ -4429,13 +4435,20 @@ input, select, textarea {
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		line-height: 1.5;
-		text-align: center;
 		text-transform: uppercase;
-		margin: auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		margin: 0px;
+		width: 100%;
+		padding: 1.5rem;
+/*		max-width: 72rem;*/
 		z-index: 2;
 	}
+
+#indexfooter {
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
 
 		#copyright input, #copyright select, #copyright textarea {
 			color: #ffffff;
@@ -4500,7 +4513,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#copyright {
-				margin: 4rem auto;
+				margin: /* 4rem */auto;
 			}
 
 		}
