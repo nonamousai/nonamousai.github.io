@@ -3801,7 +3801,7 @@ input, select, textarea {
     	background: rgba(255,255,255,0.8);
 		position: relative;
 		margin: 0 auto;
-		width: 60%;
+		width: calc(100% - 4rem);
 		max-width: 64rem;
 		z-index: 2;
 		padding: 0;
