@@ -3274,9 +3274,9 @@ input, select, textarea {
 			z-index: -1;
 		}
 
-#home > .bg {
+/*#home > .bg {
 	background-image: ;
-}
+}*/
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3312,7 +3312,7 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto;
 			}
 
 		}
