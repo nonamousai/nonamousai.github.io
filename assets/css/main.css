@@ -3259,7 +3259,7 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
+/*		overflow: hidden;*/
 		height: 100%;
 	}
 
